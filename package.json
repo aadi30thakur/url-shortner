@@ -1,0 +1,33 @@
+{
+  "name": "url-shortner",
+  "version": "1.0.0",
+  "description": "helps to shorten the links",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aadi30thakur/url-shortner.git"
+  },
+  "keywords": [
+    "a",
+    "basic",
+    "shortner",
+    "to",
+    "shorten",
+    "links"
+  ],
+  "author": "aditya thakur",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aadi30thakur/url-shortner/issues"
+  },
+  "homepage": "https://github.com/aadi30thakur/url-shortner#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.10.0",
+    "nanoid": "^3.1.12"
+  }
+}
