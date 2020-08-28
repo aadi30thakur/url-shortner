@@ -1,0 +1,28 @@
+{
+  "name": "url-shortener",
+  "version": "1.0.0",
+  "description": "shorten your url ",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "client": "cd client && npm start",
+    "server": "npm start",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "aadi30thakur"
+  },
+  "author": "aditya thakur",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "monk": "^7.3.1",
+    "nanoid": "^3.1.12",
+    "nodemon": "^2.0.4",
+    "yup": "^0.29.3"
+  }
+}

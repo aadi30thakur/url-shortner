@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>url-Shortner | aadi - thakur</title>
+    <link rel="stylesheet" href="" />
+  </head>
+  <body>
+    <!-- <h1>hello welcome to the home page</h1> -->
+
+    <main id="app">
+      <form class="form" v-if="formVisible" @submit.prevent="createUrl()">
+        <div v-if="error" class="error">{{error}}</div>
+        <input
+          type="text"
+          class="input"
+          name="url"
+          v-model="url"
+          id="url"
+          placeholder="enter a url"
+        />
+        <input
+          type="text"
+          class="input"
+          name="CustomId"
+          v-model="CustomId"
+          id="CustomId"
+          placeholder="enter a custom url {if you wwant}"
+        />
+        <button type="submit" class="create">Generate a Short URL</button>
+      </form>
+      <div v-if="created">
+        <p class="created">
+          your short url is <a :herf="created">{{created}}</a>
+        </p>
+      </div>
+    </main>
+    <script src="https://unpkg.com/vue@2.6.11/dist/vue.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
