@@ -5,37 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>url-Shortner | aadi - thakur</title>
     <link rel="stylesheet" href="" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="app.css" />
   </head>
   <body>
     <!-- <h1>hello welcome to the home page</h1> -->
 
-    <main id="app">
-      <form class="form" v-if="formVisible" @submit.prevent="createUrl()">
-        <div v-if="error" class="error">{{error}}</div>
+    <main id="app" class="container abc">
+      <form
+        class="col-lg-6 offset-lg-3"
+        v-if="formVisible"
+        @submit.prevent="createUrl()"
+      >
+        <div v-if="error" class="error h3">{{error}}</div>
+        <label class="h3">Enter a URL(required)</label>
         <input
           type="text"
-          class="input"
+          class="input form-control"
           name="url"
           v-model="url"
           id="url"
-          placeholder="enter a url"
+          placeholder="Enter a URL"
         />
+        <br />
+        <label class="h3">CUSTOM PHRASE</label>
         <input
           type="text"
-          class="input"
+          class="input form-control"
           name="CustomId"
           v-model="CustomId"
           id="CustomId"
-          placeholder="enter a custom url {if you wwant}"
+          placeholder="Custom Phrase"
         />
-        <button type="submit" class="create">Generate a Short URL</button>
+        <br />
+        <br />
+        <button type="submit" class="create btn btn-dark form-control">
+          Generate a Short URL
+        </button>
       </form>
       <div v-if="created">
-        <p class="created">
+        <p class="created h1">
           your short url is <a :herf="created">{{created}}</a>
         </p>
       </div>
     </main>
+
     <script src="https://unpkg.com/vue@2.6.11/dist/vue.js"></script>
     <script src="app.js"></script>
   </body>
