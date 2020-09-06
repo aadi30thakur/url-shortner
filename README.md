@@ -23,7 +23,7 @@ npm run start
 
 ## Author
 
-* Website: https://aadi30thakur.github.io/portfolio/
+* Website: https://aadi30thakur.github.io/portfolio-V2/
 * Twitter: [@aditya\_thakur80](https://twitter.com/aditya\_thakur80)
 * Github: [@aadi30thakur](https://github.com/aadi30thakur)
 * LinkedIn: [@aditya-thakur](https://linkedin.com/in/aditya-thakur)
